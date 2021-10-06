@@ -1,38 +1,76 @@
 .App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  width: 90vw;
+  background-color: #faf8f4;
+  margin: 5em;
+  border-radius: 2em;
+  box-sizing: border-box;
+  box-shadow: rgb(31, 16, 16);
+}
+
+.display-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5em 20em 0 0;
+}
+
+.title {
+  font-family: "Gideon Roman", cursive;
+  color: orange;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+span {
+  color: #2269ba;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.color-picker {
+  margin-bottom: 4rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-input {
+  width: 14rem;
+  border: 2px solid #216c76;
+  border-radius: 10px;
+  outline: none;
+  padding: 0.7rem;
+  box-sizing: border-box;
+  transition: 0.3s;
+  margin-bottom: 4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.text-input::placeholder {
+  font-family: "Gideon Roman", cursive;
+  font-weight: bold;
+  color: #5ba1f9;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-input:focus {
+  border-color: #5ba1f9;
+  box-shadow: 0 0 8px 0 #5ba1f9;
+}
+
+.text-input:focus::placeholder {
+  visibility: hidden;
+}
+
+.picker-title {
+  color: #5ba1f9;
+  font-family: "Gideon Roman";
+}
+
+.main-image {
+  border-radius: 10px;
 }
